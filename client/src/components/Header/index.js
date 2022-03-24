@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import Auth from '../../utils/auth';
-
-
 
 const Header = () => {
   const logout = event => {
@@ -16,6 +15,7 @@ const Header = () => {
         <Link to="/">
           <h1>Deep Thoughts</h1>
         </Link>
+
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
@@ -31,7 +31,6 @@ const Header = () => {
             </>
           )}
         </nav>
-
       </div>
     </header>
   );
